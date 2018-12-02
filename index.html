@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #007acc;
+                margin: 0;
+            }
+            rect {
+                fill: #9f050f;
+                transform-origin: top left;
+            }
+            #logo {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            #logo svg {
+                z-index: 2;
+            }
+            #background {
+                filter: blur(3px);
+                display: block;
+                height: 100%;
+                width: 100%;
+                z-index: 3;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="background">
+            <div id="blur"></div>
+            <svg viewbox="0 0 100 36" width="100vw" height="36vw" style="transform-origin: bottom-left; position: absolute; bottom: 0; z-index: 1">
+                        <polygon points="   0,36.0  19.9,30.9  18.9,36.0"               style="fill:#3c79ff;"/>
+                        <polygon points="   0,36.0  21.1,24.4  19.9,30.9"               style="fill:#5093ff;"/>
+                        <polygon points="   0,36.0   9.6,26.3  21.1,24.5"               style="fill:#3e80ed;"/>
+                        <polygon points="   0,27.5   9.6,26.3     0,36.0"               style="fill:#4187ff;"/>
+                        <polygon points="   0,27.5   6.8,24.7   9.6,26.3"               style="fill:#508aff;"/>
+                        <polygon points="29.0,36.0  72.2,26.5  88.2,36.0"               style="fill:#5494f6;"/>
+                        <polygon points="21.0,24.5  35.0,17.1  38.3,23.8"               style="fill:#91b5ff;"/>
+                        <polygon points="13.7,21.7  27.7,21.0  21.0,24.5"               style="fill:#82a7ff;"/>
+                        <polygon points="13.7,21.7  35.0,17.1  27.7,21.0"               style="fill:#9cb1ff;"/>
+                        <polygon points="33.5,29.8  38.3,23.8  43.5,25.6"               style="fill:#538cff;"/>
+                        <polygon points="38.3,23.8  42.1,20.4  43.5,25.6"               style="fill:#4783ff;"/>
+                        <polygon points="42.1,20.4  52.9,21.5  43.5,25.6"               style="fill:#5994ff;"/>
+                        <polygon points="35.0,17.1  42.1,20.4  38.3,23.8"               style="fill:#81baff;"/>
+                        <polygon points="35.0,17.1  47.0,11.1  42.1,20.4"               style="fill:#9eb3ff;"/>
+                        <polygon points="42.1,20.4  47.0,11.1  54.0, 5.3"               style="fill:#95b6ff;"/>
+                        <polygon points="47.0,11.1  52.9,   0  54.0, 5.3"               style="fill:#a2aaff;"/>
+                        <polygon points="35.0,17.1  52.9,   0  47.0,11.1"               style="fill:#bfa2ff;"/>
+                        <polygon points="72.2,26.5   100,36.0  88.0,36.0"               style="fill:#4c8aec;"/>
+                        <polygon points="52.9,21.5  57.9,17.7  54.9,21.3"               style="fill:#7aadff;"/>
+                        <polygon points="65.0,20.5  70.7, 9.7  72.2,26.5"               style="fill:#69a4ff;"/>
+                        <polygon points="57.9,17.7  70.5, 8.4  70.7, 9.7"               style="fill:#ad9dff;"/>
+                        <polygon points="70.5, 8.4   100,36.0  72.2,26.5"               style="fill:#326be2;"/>
+                        <polygon points="70.5, 8.4   100,26.0   100,36.0"               style="fill:#3977ee;"/>
+                        <polygon points="42.1,20.4  47.9,13.0  52.9,21.5"               style="fill:#68a1ff;"/>
+                        <polygon points="54.4,16.0  57.9,17.7  52.9,21.5"               style="fill:#5f93ff;"/>
+                        <polygon points="54.4,16.0  55.4,14.6  57.9,17.7"               style="fill:#6098ff;"/>   
+                        <polygon points="61.0, 9.5  65.0, 7.1  64.7,12.7"               style="fill:#3b70f4;"/>
+                        <polygon points="65.0, 7.1  68.2,10.1  64.7,12.7"               style="fill:#4582fd;"/>
+                        <polygon points="55.4,14.6  56.8, 7.2  59.6,10.4"               style="fill:#98b7ff;"/>
+                        <polygon points="56.8, 7.2  60.7, 2.7  59.6,10.4"               style="fill:#c4b0ff;"/>
+                        <polygon points="60.7, 2.7  61.0, 9.5  59.6,10.4"               style="fill:#afb7ff;"/>
+                        <polygon points="60.7, 2.7  65.0, 7.1  61.0, 9.5"               style="fill:#588dff;"/>
+                        <polygon points="57.3, 5.0  58.7, 5.0  58.0, 5.8"               style="fill:#3d73da;"/>
+                        <polygon points=" 6.8,24.7  13.7,21.7  21.1,24.5   9.6,26.3"    style="fill:#6494ff;"/> 
+                        <polygon points="18.9,36.0  33.5,29.8  42.5,33.1  29.0,36.0"    style="fill:#5795ff;"/>         
+                        <polygon points="21.0,24.5  38.3,23.8  33.5,29.8  18.9,36.0"    style="fill:#3975ff;"/>         
+                        <polygon points="42.5,33.1  54.9,21.3  65.0,20.5  72.2,26.5"    style="fill:#749eff;"/>
+                        <polygon points="33.5,29.8  52.9,21.5  54.9,21.3  42.5,33.1"    style="fill:#5f8fff;"/>
+                        <polygon points="57.9,17.7  70.7, 9.7  65.0,20.5  54.9,21.3"    style="fill:#8fa0ff;"/>
+                        <polygon points="47.9,13.0  52.2,14.5  54.4,16.0  52.9,21.5"    style="fill:#568fff;"/>
+                        <polygon points="55.4,14.6  59.6,10.4  61.3,15.2  57.9,17.7"    style="fill:#4b89fe;"/>
+                        <polygon points="59.6,10.4  61.0, 9.5  64.7,12.7  61.3,15.2"    style="fill:#538cff;"/>
+                        <polygon points="52.2,14.5  56.8, 7.2  55.4,14.6  54.4,16.0"    style="fill:#7eaaff;"/>
+                        <polygon points="47.9,13.0  52.5, 7.2  55.1, 9.9  52.2,14.5"    style="fill:#528cff;"/>
+                        <polygon points="52.5, 7.2  54.0, 5.3  56.8, 7.2  55.1, 9.9"    style="fill:#5e92ff;"/>
+                        <polygon points="52.9,   0  58.0, 5.8  56.8, 7.2  54.0, 5.3"    style="fill:#386be6;"/>
+            </svg>
+            <div id="logo">
+                <svg viewbox="0 0 588 636" width="588px" height="636px">
+                    <path d="M0 0 H588 V430 L294 636 L0 430 L0 0 M65 65 V394 L294 550 L523 394 V65 H65" style="fill:rgba(159,5,15,.66)";/>
+                    <polygon points="95,375 245,110 343,110 493,375 395,375 294,188 193,375" style="fill:rgba(159,5,15,.66)"/>
+                </svg>
+            </div>
+            
+        </section>
+
+    </body>
+</html>
