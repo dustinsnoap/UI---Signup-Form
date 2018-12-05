@@ -1,33 +1,6 @@
 <html>
     <head>
-        <style>
-            body {
-                background-color: #007acc;
-                margin: 0;
-            }
-            rect {
-                fill: #9f050f;
-                transform-origin: top left;
-            }
-            #logo {
-                display: flex;
-                width: 100%;
-                height: 100%;
-                justify-content: center;
-                align-items: center;
-            }
-            #logo svg {
-                z-index: 2;
-            }
-            #background {
-                filter: blur(3px);
-                display: block;
-                height: 100%;
-                width: 100%;
-                z-index: 3;
-                position: absolute;
-            }
-        </style>
+        <link rel="stylesheet" href="./css/style.css" type="text/css"> 
     </head>
     <body>
         <section id="background">
@@ -85,9 +58,13 @@
                     <path d="M0 0 H588 V430 L294 636 L0 430 L0 0 M65 65 V394 L294 550 L523 394 V65 H65" style="fill:rgba(159,5,15,.66)";/>
                     <polygon points="95,375 245,110 343,110 493,375 395,375 294,188 193,375" style="fill:rgba(159,5,15,.66)"/>
                 </svg>
-            </div>
-            
+            </div> 
         </section>
-
+        <header>
+            <nav>
+                <li>Login</li>
+                <li>Signup</li>
+            </nav>
+        </header>
     </body>
 </html>
