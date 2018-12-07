@@ -3,6 +3,10 @@ body {
     background-color: #007acc;
     margin: 0;
 }
+@font-face {
+	font-family: 'robot';
+	src: url('../fonts/robot.otf'); 
+}
 /*END GLOBAL PAGE VARIABLES*/
 /*BACKGROUND IMAGES*/
 rect {
@@ -17,15 +21,15 @@ rect {
     justify-content: center;
 }
 #logo svg {
-    z-index: 2;
+    z-index: -3;
 }
 #background {
     /* filter: blur(100px); */
     display: block;
     height: 100%;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: -2;
 }
 /*END BACKGROUND IMAGES*/
 /*HEADER AND NAVIGATION*/
@@ -33,12 +37,14 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1000;
+    top: 0;
 }
 header > nav {
     background: rgba(200,200,200,.42);
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    height: 35px;
 }
 header > nav > a {
     color: #ccc;
@@ -52,3 +58,45 @@ header > nav > a:hover {
     cursor: pointer;
 }
 /*END HEADER AND NAVIGATION*/
+/*CONTENT*/
+#content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 35px;
+}
+#content h1 {
+    font-family: "robot";
+    color: #fff;
+    font-size: 54px;
+    font-weight: 100;
+    margin: 0;
+}
+#content h2 {
+    color: #fff;
+    margin: 0;
+    font-weight: 100;
+    font-family: monospace;
+    font-size: 23px;
+}
+#content p {
+    color: #fff;
+    margin: 0;
+    font-weight: 100;
+    font-family: "robot";
+    font-size: 48px;
+}
+#content ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(100,100,100,.35);
+    padding: 12px;
+}
+#content ul li {
+    list-style: none;
+    font-family: monospace;
+    font-size: 16px;
+}
+/*END CONTENT*/
