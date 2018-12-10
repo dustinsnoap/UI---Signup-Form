@@ -69,16 +69,40 @@
         </header>
         <section id="content">
             <h1>sign up</h1>
-            <h2>Select a time zone</h2>
+            <h2>What time is it</h2>
             <p>7:38PM</p>
-            <ul>
-                <li>Central (GMT-6)</li>
-                <li>Eastern (GMT-5)</li>
-                <li>Mountain (GMT-7)</li>
-                <li>Pacific (GMT-8)</li>
-                <li>Alaska (GMT-9)</li>
-                <li>Hawaii-Aleutian (GMT-10)</li>
-            </ul>
+            <form class="options">
+                <label for="timezone-eastern" class="timezone option">
+                    <span>7:38PM</span>
+                    <input id="timezone-eastern" name="timezone" type="radio" value="-5"/>
+                    <figure class="checked"></figure>
+                </label>
+                <label for="timezone-central" class="timezone option">
+                    <span>6:38PM</span>
+                    <input id="timezone-central" name="timezone" type="radio" value="-6"/>
+                    <figure class="checked"></figure>
+                </label>
+                <label for="timezone-mountain" class="timezone option">
+                    <span>5:38PM</span>
+                    <input id="timezone-mountain" name="timezone" type="radio" value="-7"/>
+                    <figure class="checked"></figure>
+                </label>
+                <label for="timezone-pacific" class="timezone option">
+                    <span>4:38PM</span>
+                    <input id="timezone-pacific" name="timezone" type="radio" value="-8"/>
+                    <figure class="checked"></figure>
+                </label>
+                <label for="timezone-alaskian" class="timezone option">
+                    <span>3:38PM</span>
+                    <input id="timezone-alaskian" name="timezone" type="radio" value="-9"/>
+                    <figure class="checked"></figure>
+                </label>
+                <label for="timezone-hawaiian" class="timezone option">
+                    <span>2:38PM</span>
+                    <input id="timezone-hawaiian" name="timezone" type="radio" value="-10"/>
+                    <figure class="checked"></figure>
+                </label>
+            </form>
         </section>
     </body>
 </html>
