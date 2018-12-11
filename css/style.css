@@ -157,4 +157,20 @@ header .page-header p {
 #content .submit .button:hover {
     background-color: rgba(250,250,250,.50);
 }
+#content .signup-location {
+    display: flex;
+    width: 17em;
+    margin-top: 2.5em;
+    justify-content: space-between;
+}
+#content .signup-location figure {
+    display: block;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background-color: rgba(100,100,100,.75);
+}
+#content .signup-location figure.current {
+    background-color: rgba(250,250,250,.75);
+}
 /*END CONTENT*/
