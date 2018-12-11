@@ -1,6 +1,9 @@
 /*GLOBAL PAGE VARIABLES*/
 body {
     background-color: #007acc;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     margin: 0;
 }
 @font-face {
@@ -34,61 +37,67 @@ rect {
 /*END BACKGROUND IMAGES*/
 /*HEADER AND NAVIGATION*/
 header {
-    position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0;
 }
-header > nav {
+header nav {
     background: rgba(200,200,200,.42);
-    display: flex;
+    display: fixed;
     justify-content: flex-end;
     width: 100%;
     height: 50px;
 }
-header > nav > a {
+header nav a {
     color: #ccc;
     font-size: 20px;
+    float: right;
     padding: 0px 15px;
     line-height: 50px;
     text-decoration: none;
     transition: color .22s ease-in-out;
 }
-header > nav > a:hover {
+header nav a:hover {
     color: #fff;
     cursor: pointer;
 }
-/*END HEADER AND NAVIGATION*/
-/*CONTENT*/
-#content {
+header .page-header {
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /*header has 50px height*/
-    margin-top: 50px;
+    margin: 20px 0;
 }
-#content h1 {
+header .page-header h1 {
     font-family: "robot";
     color: #fff;
     font-size: 54px;
     font-weight: 100;
     margin: 0;
 }
-#content h2 {
+header .page-header h2 {
     color: #fff;
     margin: 0;
     font-weight: 100;
     font-family: monospace;
     font-size: 23px;
 }
-#content p {
+header .page-header p {
     color: #fff;
     margin: 0;
     font-weight: 100;
     font-family: "robot";
     font-size: 48px;
+}
+/*END HEADER AND NAVIGATION*/
+/*CONTENT*/
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 10px;
 }
 #content .options {
     display: flex;
@@ -99,17 +108,19 @@ header > nav > a:hover {
     display: flex;
     align-items: center;
     background-color: rgba(100,100,100,.35);
-    font-size: 25px;
     padding: 0px;
     width: 40vw;
-    height: 40px;
+    height: 4.5em;
     min-width: fit-content;
     justify-content: space-between;
     border-bottom: 1px solid rgba(0,0,0,.15);
 }
 #content .options .option:last-of-type {border: none;}
 #content .options .option:hover {background-color: rgba(250,250,250,.25);}
-#content .options .option span {text-indent: 25px;}
+#content .options .option span {
+    font-size: 2.5em;
+    text-indent: 1.25em;
+}
 #content .options .option input[type=radio] {display: none;}
 #content .options .option input[type=radio]:checked + .checked {display: block;}
 #content .options .option input[type=radio]:hover + .checked {
@@ -120,12 +131,30 @@ header > nav > a:hover {
 #content .options .option .checked {
     display: none;
     margin: 0;
-    font-size: 16px;
-    width: 0.3em;
-    height: 0.9em;
+    font-size: 1.6em;
+    width: 0.5em;
+    height: 1.1em;
     border: solid rgba(250,250,250,1);
     border-width: 0 .2em .2em 0;
     transform: rotate(45deg);
-    margin-right: 25px;
+    margin-right: 1.5em;
+}
+#content .submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.5em;
+    height: 4.5em;
+}
+#content .submit .button {
+    padding: 0;
+    border: 0;
+    color: #fff;
+    width: 20vw;
+    border-radius: 5px;
+    background-color: rgba(250,250,250,.25);
+    font-size: 25px;
+}
+#content .submit .button:hover {
+    background-color: rgba(250,250,250,.50);
 }
 /*END CONTENT*/

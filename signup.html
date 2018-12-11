@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="./css/reset.css" type="text/css">
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <link href='./fonts/robot.otf' rel='stylesheet' type='text/css'>
     </head>
@@ -66,42 +67,49 @@
                 <a href="#">Login</a>
                 <a href="index.html">Back</a>
             </nav>
+            <div class="page-header">
+                <h1>sign up</h1>
+                <h2>What time is it</h2>
+                <p>7:38PM</p>
+            </div>
         </header>
         <section id="content">
-            <h1>sign up</h1>
-            <h2>What time is it</h2>
-            <p>7:38PM</p>
-            <form class="options">
-                <label for="timezone-eastern" class="timezone option">
-                    <span>7:38PM</span>
-                    <input id="timezone-eastern" name="timezone" type="radio" value="-5"/>
-                    <figure class="checked"></figure>
-                </label>
-                <label for="timezone-central" class="timezone option">
-                    <span>6:38PM</span>
-                    <input id="timezone-central" name="timezone" type="radio" value="-6"/>
-                    <figure class="checked"></figure>
-                </label>
-                <label for="timezone-mountain" class="timezone option">
-                    <span>5:38PM</span>
-                    <input id="timezone-mountain" name="timezone" type="radio" value="-7"/>
-                    <figure class="checked"></figure>
-                </label>
-                <label for="timezone-pacific" class="timezone option">
-                    <span>4:38PM</span>
-                    <input id="timezone-pacific" name="timezone" type="radio" value="-8"/>
-                    <figure class="checked"></figure>
-                </label>
-                <label for="timezone-alaskian" class="timezone option">
-                    <span>3:38PM</span>
-                    <input id="timezone-alaskian" name="timezone" type="radio" value="-9"/>
-                    <figure class="checked"></figure>
-                </label>
-                <label for="timezone-hawaiian" class="timezone option">
-                    <span>2:38PM</span>
-                    <input id="timezone-hawaiian" name="timezone" type="radio" value="-10"/>
-                    <figure class="checked"></figure>
-                </label>
+            <form>
+                <div class="options">
+                    <label for="timezone-hawaiian" class="timezone option">
+                        <span>2:38PM</span>
+                        <input id="timezone-hawaiian" name="timezone" type="radio" value="-10"/>
+                        <figure class="checked"></figure>
+                    </label>
+                    <label for="timezone-alaskian" class="timezone option">
+                        <span>3:38PM</span>
+                        <input id="timezone-alaskian" name="timezone" type="radio" value="-9"/>
+                        <figure class="checked"></figure>
+                    </label>
+                    <label for="timezone-pacific" class="timezone option">
+                        <span>4:38PM</span>
+                        <input id="timezone-pacific" name="timezone" type="radio" value="-8"/>
+                        <figure class="checked"></figure>
+                    </label>
+                    <label for="timezone-mountain" class="timezone option">
+                        <span>5:38PM</span>
+                        <input id="timezone-mountain" name="timezone" type="radio" value="-7"/>
+                        <figure class="checked"></figure>
+                    </label>
+                    <label for="timezone-central" class="timezone option">
+                        <span>6:38PM</span>
+                        <input id="timezone-central" name="timezone" type="radio" value="-6"/>
+                        <figure class="checked"></figure>
+                    </label>
+                    <label for="timezone-eastern" class="timezone option">
+                        <span>7:38PM</span>
+                        <input id="timezone-eastern" name="timezone" type="radio" value="-5"/>
+                        <figure class="checked"></figure>
+                    </label>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Next" class="button"/>
+                </div>
             </form>
         </section>
     </body>
